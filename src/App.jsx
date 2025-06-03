@@ -7,17 +7,17 @@ import ICBLabsPage from './Components/HeroSection'
 import BlockchainLanding from './Components/AboutUS'
 import ICBLabsEcosystem from './Components/Ecosystem'
 import Contact from './Components/ContectUs'
+import AnimatedGLB from './Components/AnimatedGLB'
 
 function App() {
-
   return (
     <>
-    
-    <Navbar/>
-  <ICBLabsPage/>
-  <BlockchainLanding/>
-  {/* <ICBLabsEcosystem/> */}
-<Contact/>
+      <Navbar/>
+      <AnimatedGLB /> {/* 3D object at the bottom */}
+      <ICBLabsPage/>
+      <BlockchainLanding/>
+      {/* <ICBLabsEcosystem/> */}
+      <Contact/>
     </>
   )
 }
