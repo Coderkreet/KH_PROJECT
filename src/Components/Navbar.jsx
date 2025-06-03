@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       {/* Main Header */}
-      <header className="bg-[##010001] relative overflow-hidden backdrop-blur-md">
+      <header className="fixed top-0 left-0 w-full z-50 bg-[##010001] overflow-hidden backdrop-blur-md">
         {/* Glowing background effects */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -107,7 +107,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       <div 
-        className={`fixed top-0 right-0 h-full w-80 bg-purple-950 backdrop-blur-md z-50 transform transition-transform duration-300 md:hidden ${
+        className={`fixed top-0 right-0 h-full w-80 bg-transparent backdrop-blur-md z-50 transform transition-transform duration-300 md:hidden ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
